@@ -34,7 +34,7 @@ public class employee_details {
 				System.out.println("Pag-ibig #: " + employee[9]);
 				
 				System.out.println("============== Calculation ==============");
-				String sss_contrib = get_sss_calculation();
+				String sss_contrib = get_employee_salary();
 				
 			} else {
 				System.out.println("No data found. Please try again");
@@ -106,7 +106,7 @@ public class employee_details {
 		
 	}
 	
-	public static String get_sss_calculation() {
+	public static String get_employee_salary() {
 		
 		String d_montly_salary = employee[13].replace(";x;", "").replace("\"", "");
 		System.out.println("monthly salary: "+d_montly_salary);
